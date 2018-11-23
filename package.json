@@ -1,0 +1,10 @@
+{
+  "name": "ask.it",
+  "version": "0.0.0",
+  "description": "Ask.it coding challange application",
+  "main": "index.js",
+  "repository": "git@bitbucket.org:njanjo/ask.it.git",
+  "author": "Sanjin Šarić <sanjin.saric1991@gmail.com>",
+  "license": "MIT",
+  "private": true
+}
