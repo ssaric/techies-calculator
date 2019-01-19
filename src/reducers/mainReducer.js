@@ -1,8 +1,8 @@
 import * as mainConstants from '../constants/main';
 
 const INITIAL_STATE = {
-    magicResistance: '25',
-    heroHp: '1000',
+    magicResistance: 25,
+    heroHp: 1000,
     hasScepter: false,
     remoteMineLevel: 1,
     landMineLevel: 1,

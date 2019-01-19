@@ -26,9 +26,12 @@ class RootContainer extends React.Component {
                         value={this.props.magicResistance}
                         onChange={this.props.updateMagicResistance}
                         suffix="%"
+                        min={0}
+                        max={100}
                     />
                     <NumberInput
                         name="Target hero HP"
+                        min={0}
                         value={this.props.heroHp}
                         onChange={this.props.updateHeroHp}
                     />
@@ -90,22 +93,15 @@ RootContainer.propTypes = {
     updateHeroHp: PropTypes.func.isRequired,
     updateRemoteMineLevel: PropTypes.func.isRequired,
     updateLandMineLevel: PropTypes.func.isRequired,
-    landMineLevel: PropTypes.number,
-    remoteMines: PropTypes.number,
-    landMines: PropTypes.number,
-    remoteMineLevel: PropTypes.number,
-    hasScepter: PropTypes.bool,
-    heroHp: PropTypes.string,
-    magicResistance: PropTypes.string,
+    hasScepter: PropTypes.bool.isRequired,
+    landMineLevel: PropTypes.number.isRequired,
+    remoteMines: PropTypes.number.isRequired,
+    landMines: PropTypes.number.isRequired,
+    remoteMineLevel: PropTypes.number.isRequired,
+    heroHp: PropTypes.number.isRequired,
+    magicResistance: PropTypes.number.isRequired,
 };
 RootContainer.defaultProps = {
-    hasScepter: false,
-    landMines: 0,
-    remoteMines: 0,
-    magicResistance: '25',
-    remoteMineLevel: 1,
-    landMineLevel: 1,
-    heroHp: '0',
 };
 
 export default connect(
