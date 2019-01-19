@@ -27,7 +27,7 @@ class RootContainer extends React.Component {
                         onChange={this.props.updateMagicResistance}
                         suffix="%"
                         min={0}
-                        max={100}
+                        max={99}
                     />
                     <NumberInput
                         name="Target hero HP"
