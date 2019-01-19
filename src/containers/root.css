@@ -1,0 +1,19 @@
+.root {
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.mines-area {
+    display: flex;
+    align-items: center;
+}
+
+
+.input-area {
+    background-color: var(--background-color);
+    padding: 10px;
+    border: 1px solid darkgray;
+    border-radius: 3px;
+}

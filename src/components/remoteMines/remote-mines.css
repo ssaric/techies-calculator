@@ -1,0 +1,14 @@
+.mines {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+    border: 1px solid darkgray;
+    border-radius: 3px;
+    padding: 10px;
+    background-color: var(--background-color);
+}
+
+.mines__levels {
+    display: flex;
+}
