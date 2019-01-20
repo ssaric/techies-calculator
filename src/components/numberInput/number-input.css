@@ -5,6 +5,10 @@
     width: 250px;
     margin-bottom: 10px;
 }
+
+.number-input b {
+    display: none;
+}
 .number-input__text {
     width: 150px;
 }
@@ -12,3 +16,4 @@
     width: 70px;
     margin-right: 10px;
 }
+

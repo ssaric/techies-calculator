@@ -6,8 +6,8 @@ import * as mainConstants from '../constants/main';
 import RemoteMines from '../components/remoteMines/RemoteMines';
 import LandMines from '../components/landMines/LandMines';
 import Checkbox from '../components/checkbox/Checkbox';
-import NumberInput from '../components/numberInput/NumberInput';
 import Result from '../components/result/Result';
+import NumberInput from '../components/numberInput/NumberInput';
 
 import './root.css';
 
@@ -26,7 +26,7 @@ class RootContainer extends React.Component {
                         value={this.props.magicResistance}
                         onChange={this.props.updateMagicResistance}
                         suffix="%"
-                        min={0}
+                        min={-99}
                         max={99}
                     />
                     <NumberInput
