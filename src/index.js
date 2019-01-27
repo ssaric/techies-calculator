@@ -15,6 +15,8 @@ import App from './App';
 import * as sagas from './sagas/sagas';
 import rootReducer from './reducers/rootReducer';
 
+import './gtag';
+
 const history = createHistory();
 
 const routerMiddlewareInstance = routerMiddleware(history);
