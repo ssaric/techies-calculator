@@ -17,11 +17,19 @@ const LAND_MINE_DAMAGE = {
     4: 800,
 };
 
+const VALID_NUMBER_REGEX = /^(-?\d+\.\d+)$|^(-?\d+)$/;
 
 function* calculateMines() {
     try {
-        const magicResistance = yield select(selectors.magicResistance);
-        const heroHp = yield select(selectors.heroHp);
+        let magicResistance = yield select(selectors.magicResistance);
+        let heroHp = yield select(selectors.heroHp);
+
+        const validMagicResistance = VALID_NUMBER_REGEX.test(magicResistance);
+        const validHeroHp = VALID_NUMBER_REGEX.test(heroHp);
+        if (!validMagicResistance || !validHeroHp) return;
+        magicResistance = parseInt(magicResistance, 10);
+        heroHp = parseInt(heroHp, 10);
+
         const remoteMineLevel = yield select(selectors.remoteMineLevel);
         const landMineLevel = yield select(selectors.landMineLevel);
         const hasScepter = yield select(selectors.hasScepter);

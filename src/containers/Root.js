@@ -98,8 +98,8 @@ RootContainer.propTypes = {
     remoteMines: PropTypes.number.isRequired,
     landMines: PropTypes.number.isRequired,
     remoteMineLevel: PropTypes.number.isRequired,
-    heroHp: PropTypes.number.isRequired,
-    magicResistance: PropTypes.number.isRequired,
+    heroHp: PropTypes.string.isRequired,
+    magicResistance: PropTypes.string.isRequired,
 };
 RootContainer.defaultProps = {
 };
